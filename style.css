@@ -1,0 +1,160 @@
+/*set alt sizing as default (new and improved way)*/
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+/*Remove link styling*/
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+/*Remove list styling*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+body {
+    font-family: Roboto, Verdana, Tahoma, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*Special formating for TOP link*/
+.footer a {
+    color:aqua;
+    padding: 1ch;
+}
+/*add space on left and right. Is there a better way?*/
+.header, .hero, .info, .quote-section, .cta, .footer {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header, .hero, .footer {
+    background-color: #1f2637;
+}
+
+button {
+    background-color: #3882f6;
+    padding: 5px 15px;
+    border-radius: 6px;;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.logo {
+    font-family: 'Shizuru', cursive;
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.hero-secondary, button {
+    font-size: 14px;
+    color: #e5e7eb;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;    
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.hero-image {
+    max-width: 300px;
+    padding: 25px;
+    border-radius: 50px;
+}
+/*-info section--*/
+.infoText {
+    font-size: 12px;
+    color: #585a5c;
+    max-width: 125px;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.items img {
+    max-width: 200px;
+    border-radius: 15px;
+    border: 2px solid #3882f6;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px
+}
+
+.title {
+    font-size: 26px;
+    color: #3e3f41;
+}
+
+.contents {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* --Quote section--*/
+.quote-section {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-group, .info {
+    margin: 50px auto;
+}
+
+.author {
+    text-align: right;
+    margin:5px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.quote {
+    margin:0;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 100;
+    color:#1f2637
+}
+/*--CTA section--*/
+
+
+.footer {
+    color: #9fa1a5;
+    font-size: 12px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
