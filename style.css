@@ -26,20 +26,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-/*Special formating for TOP link*/
-.footer a {
-    color:aqua;
-    padding: 1ch;
-}
-/*add space on left and right. Is there a better way?*/
-.header, .hero, .info, .quote-section, .cta, .footer {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.header, .hero, .footer {
-    background-color: #1f2637;
-}
 
 button {
     background-color: #3882f6;
@@ -53,6 +39,16 @@ h1 {
     color: #f9faf8;
 }
 
+/*add space on left and right. Is there a better way to do this?*/
+.header, .hero, .info, .quote-section, .cta, .footer {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.header, .hero, .footer {
+    background-color: #1f2637;
+}
+/*--header-hero section--*/
 .logo {
     font-family: 'Shizuru', cursive;
     font-size: 24px;
@@ -83,9 +79,9 @@ h1 {
     border-radius: 10px;
     align-self: center;
 }
-/*-info section--*/
+/*--info section--*/
 .infoText {
-    font-size: 12px;
+    font-size: 14px;
     color: #585a5c;
     max-width: 125px;
     text-align: center;
@@ -151,8 +147,7 @@ h1 {
 }
 /*--CTA section--*/
 .cta {
-    display: flex;
-    
+    display: flex;    
 }
 
 .cta-container {
@@ -187,4 +182,9 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*Special formating for TOP link in footer*/
+.footer a {
+    color:aqua;
+    padding: 1ch;
 }
